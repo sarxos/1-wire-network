@@ -1,0 +1,9 @@
+<project name="BiDirectionalRMI">
+ 
+	<target name="default" depends="rmic" />
+	
+	<target name="rmic">
+		<rmic classname="com.sarxos.ow.rmi.RemoteOWUserImpl" base="bin"/>
+	</target>
+	
+</project>

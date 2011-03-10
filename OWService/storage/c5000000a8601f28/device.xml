@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device28 serialization="custom">
+  <remote>
+    <string>UnicastServerRef</string>
+  </remote>
+  <unicast>
+    <default>
+      <port>0</port>
+    </default>
+  </unicast>
+  <device>
+    <default>
+      <enabled>false</enabled>
+      <longAddress>-4251398045412876504</longAddress>
+      <address>C5000000A8601F28</address>
+      <family>40</family>
+      <label>C5000000A8601F28 DS18B20</label>
+    </default>
+  </device>
+</device28>

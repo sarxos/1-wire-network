@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.sarxos.ow.device.Device29 serialization="custom">
+  <remote>
+    <string>UnicastServerRef</string>
+  </remote>
+  <unicast>
+    <default>
+      <port>0</port>
+    </default>
+  </unicast>
+  <device>
+    <default>
+      <enabled>false</enabled>
+      <address>ED000000020D8A29</address>
+      <family>41</family>
+      <label>ED000000020D8A29 DS2408</label>
+    </default>
+  </device>
+</com.sarxos.ow.device.Device29>

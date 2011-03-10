@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device10 serialization="custom">
+  <remote>
+    <string>UnicastServerRef</string>
+  </remote>
+  <unicast>
+    <default>
+      <port>0</port>
+    </default>
+  </unicast>
+  <device>
+    <default>
+      <enabled>false</enabled>
+      <address>DA000800DC625B10</address>
+      <family>16</family>
+      <label>DA000800DC625B10 DS1920</label>
+    </default>
+  </device>
+  <device10>
+    <default>
+      <temp>-2.147483648E9</temp>
+      <tempListeners/>
+    </default>
+  </device10>
+</device10>

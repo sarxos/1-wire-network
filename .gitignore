@@ -1,0 +1,13 @@
+OWCommons/.settings
+OWCommons/bin
+OWCommons/dist
+OWModel/bin
+OWService/.settings
+OWService/bin
+OWClient/.settings
+OWClient/bin
+OWClient/**/*.class
+OWClient/mxgraph
+OWClient/src2
+
+

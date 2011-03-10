@@ -1,0 +1,51 @@
+<project name="SarXos OW Commons Library">
+
+	<property name="lib.version" value="0.0.1"/>
+
+	<property name="dist.folder" value="dist"/>
+	<property name="dist.file" value="ow_commons-${lib.version}.jar"/>
+	<property name="src.folder" value="src"/>
+	<property name="bin.folder" value="bin"/>
+	
+	
+	<target name="default" depends="jar"/>
+	
+  	<target name="jar" depends="rmic">
+  		<echo>Jaring</echo>
+  		<jar destfile="${dist.folder}/${dist.file}">
+  			<fileset dir="${bin.folder}/">
+  				<include name="**/*"/>
+  				<exclude name="**/*.java"/>
+  			</fileset>
+  		</jar>
+  	</target>
+
+	<target name="rmic" depends="compile">
+		<echo>Generowanie namiastek obiektów zdalnych</echo>
+		<rmic classname="com.sarxos.ow.rmi.RemoteOWUserImpl" base="bin" debug="true"/>
+		<rmic classname="com.sarxos.ow.rmi.RemoteOWServiceImpl" base="bin" debug="true"/>
+		<rmic classname="com.sarxos.ow.device.Device28" base="bin" debug="true"/>
+		<rmic classname="com.sarxos.ow.device.Device10" base="bin" debug="true"/>
+	</target>
+
+	<target name="compile" depends="pre-compile-clean">
+		<!--
+	    <javac srcdir="${src.folder}" destdir="${bin.folder}"/>
+	    -->
+	</target>
+	
+	<target name="pre-compile-clean">
+		<echo>Czyszczenie katalogów</echo>
+  		<delete verbose="true">
+  			<!--
+  			<fileset dir="bin">
+  				<include name="**/*.class"/>
+  			</fileset>
+  			-->
+  			<fileset dir="dist/">
+  				<include name="**/*.class"/>
+  			</fileset>
+  		</delete>
+	</target>
+	
+</project>

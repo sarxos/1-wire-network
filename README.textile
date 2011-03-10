@@ -1,0 +1,18 @@
+Requirements:
+
+* Java 6
+* AspectJ
+* Win32 1-Wire Native drivers installed
+
+The goal of this project is to create extensible, highly scalable 1-wire discovery and usage service. Each device can be programmed in the JavaScript.
+
+Project is composed of several parts:
+
+# OWCommons - common libraries and code used by other projects.
+# OWModel - 1-wire network model.
+# OWService - 1-wire discovery service (server).
+# OWClient - client for OWService connected via RMI.
+
+After device is being discovered (~100ms after connection) it is being persisted in the <code>storage</code> directory. This special directory contains subdirectories which names is equal to the device unique address. Each device directory contains XML descriptor and script file containing JavaScript code for the device execution.
+
+I won't be working on this project in the future, so in case of any questions regarding this project don't hesitate to ask me :)
